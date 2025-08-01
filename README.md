@@ -87,38 +87,43 @@ Swap:           15Gi          0B        15Gi
 
 ```sh
 Summary:
-  Count:	200
-  Total:	28.46 ms
-  Slowest:	9.23 ms
-  Fastest:	1.59 ms
-  Average:	5.38 ms
-  Requests/sec:	7028.30
+  Count:	1346820
+  Total:	300.01 s
+  Slowest:	87.09 ms
+  Fastest:	0.10 ms
+  Average:	8.22 ms
+  Requests/sec:	4489.22
 
 Response time histogram:
-  1.587 [1]  |∎
-  2.352 [12] |∎∎∎∎∎∎∎∎∎∎∎∎∎
-  3.117 [32] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
-  3.881 [24] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
-  4.646 [20] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
-  5.411 [10] |∎∎∎∎∎∎∎∎∎∎∎
-  6.176 [5]  |∎∎∎∎∎∎
-  6.940 [25] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
-  7.705 [36] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
-  8.470 [26] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
-  9.235 [9]  |∎∎∎∎∎∎∎∎∎∎
+  0.098  [1]      |
+  8.798  [609062] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  17.497 [339618] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  26.196 [42195]  |∎∎∎
+  34.895 [6412]   |
+  43.595 [1917]   |
+  52.294 [617]    |
+  60.993 [130]    |
+  69.692 [34]     |
+  78.392 [12]     |
+  87.091 [2]      |
 
 Latency distribution:
-  10 % in 2.62 ms 
-  25 % in 3.25 ms 
-  50 % in 5.63 ms 
-  75 % in 7.35 ms 
-  90 % in 8.22 ms 
-  95 % in 8.42 ms 
-  99 % in 8.60 ms 
+  10 % in 2.23 ms 
+  25 % in 3.97 ms 
+  50 % in 7.33 ms 
+  75 % in 10.80 ms 
+  90 % in 14.53 ms 
+  95 % in 17.62 ms 
+  99 % in 25.63 ms 
 
 Status code distribution:
-  [OK]   200 responses
+  [Unavailable]   4 responses         
+  [OK]            1346816 responses   
 
+Error distribution:
+  [2]   rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:54550->127.0.0.1:20000: use of closed network connection   
+  [1]   rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:54608->127.0.0.1:20000: use of closed network connection   
+  [1]   rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:54552->127.0.0.1:20000: use of closed network connection  
 ```
 
 ### old triple
