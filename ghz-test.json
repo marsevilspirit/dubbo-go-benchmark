@@ -1,0 +1,12 @@
+{
+    "proto": "proto/greet.proto",
+    "call": "greet.GreetService/Greet",
+    "total": 101000,
+    "skipFirst": 1000,
+    "concurrency": 50,
+    "connections": 20,
+    "data": {"name": "dubbo"},
+    "max-duration": "300s",
+    "host": "0.0.0.0:20000",
+    "insecure": true
+}
