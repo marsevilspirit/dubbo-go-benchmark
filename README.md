@@ -1,5 +1,7 @@
 # dubbo-go-benchmark
 
+### new triple
+
 ```sh
 Summary:
   Count:	200
@@ -30,6 +32,44 @@ Latency distribution:
   90 % in 8.22 ms 
   95 % in 8.42 ms 
   99 % in 8.60 ms 
+
+Status code distribution:
+  [OK]   200 responses
+
+```
+
+### old triple
+
+```sh
+Summary:
+  Count:	200
+  Total:	32.58 ms
+  Slowest:	13.91 ms
+  Fastest:	1.62 ms
+  Average:	6.18 ms
+  Requests/sec:	6138.63
+
+Response time histogram:
+  1.616  [1]  |∎
+  2.846  [37] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  4.075  [33] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  5.304  [29] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  6.533  [17] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  7.762  [34] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  8.991  [6]  |∎∎∎∎∎∎
+  10.220 [11] |∎∎∎∎∎∎∎∎∎∎∎∎
+  11.449 [8]  |∎∎∎∎∎∎∎∎∎
+  12.678 [16] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  13.907 [8]  |∎∎∎∎∎∎∎∎∎
+
+Latency distribution:
+  10 % in 2.46 ms 
+  25 % in 3.51 ms 
+  50 % in 5.16 ms 
+  75 % in 7.71 ms 
+  90 % in 11.80 ms 
+  95 % in 12.56 ms 
+  99 % in 13.54 ms 
 
 Status code distribution:
   [OK]   200 responses
