@@ -87,43 +87,38 @@ Swap:           15Gi          0B        15Gi
 
 ```sh
 Summary:
-  Count:	1346820
+  Count:	1698710
   Total:	300.01 s
-  Slowest:	87.09 ms
+  Slowest:	72.02 ms
   Fastest:	0.10 ms
-  Average:	8.22 ms
-  Requests/sec:	4489.22
+  Average:	6.45 ms
+  Requests/sec:	5662.14
 
 Response time histogram:
-  0.098  [1]      |
-  8.798  [609062] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
-  17.497 [339618] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
-  26.196 [42195]  |∎∎∎
-  34.895 [6412]   |
-  43.595 [1917]   |
-  52.294 [617]    |
-  60.993 [130]    |
-  69.692 [34]     |
-  78.392 [12]     |
-  87.091 [2]      |
+  0.096  [1]      |
+  7.288  [667486] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  14.481 [275130] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  21.673 [46217]  |∎∎∎
+  28.865 [7707]   |
+  36.058 [2249]   |
+  43.250 [844]    |
+  50.442 [272]    |
+  57.634 [74]     |
+  64.827 [16]     |
+  72.019 [4]      |
 
 Latency distribution:
-  10 % in 2.23 ms 
-  25 % in 3.97 ms 
-  50 % in 7.33 ms 
-  75 % in 10.80 ms 
-  90 % in 14.53 ms 
-  95 % in 17.62 ms 
-  99 % in 25.63 ms 
+  10 % in 1.67 ms 
+  25 % in 2.49 ms 
+  50 % in 4.71 ms 
+  75 % in 8.75 ms 
+  90 % in 12.29 ms 
+  95 % in 15.04 ms 
+  99 % in 22.19 ms 
 
 Status code distribution:
-  [Unavailable]   4 responses         
-  [OK]            1346816 responses   
-
-Error distribution:
-  [2]   rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:54550->127.0.0.1:20000: use of closed network connection   
-  [1]   rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:54608->127.0.0.1:20000: use of closed network connection   
-  [1]   rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:54552->127.0.0.1:20000: use of closed network connection  
+  [OK]            1698685 responses   
+  [Unavailable]   25 responses   
 ```
 
 ### old triple
