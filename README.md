@@ -1,5 +1,7 @@
 # dubbo-go-benchmark
 
+使用 50 个并发，通过 20 个 TCP 连接，对地址为 0.0.0.0:20000 的 dubbo-go triple 服务的 greet.GreetService/Greet 方法进行压测。在预热 1000 次请求后，再发送并统计 101,000 次请求的性能数据，整个测试过程最长不超过 300 秒。
+
 ### 测试环境
 
 ```sh
