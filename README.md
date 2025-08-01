@@ -129,36 +129,48 @@ Error distribution:
 ### old triple
 
 ```sh
-Summary:
-  Count:	200
-  Total:	32.58 ms
-  Slowest:	13.91 ms
-  Fastest:	1.62 ms
-  Average:	6.18 ms
-  Requests/sec:	6138.63
+``Summary:
+  Count:	1549097
+  Total:	300.01 s
+  Slowest:	75.13 ms
+  Fastest:	0.09 ms
+  Average:	7.18 ms
+  Requests/sec:	5163.53
 
 Response time histogram:
-  1.616  [1]  |∎
-  2.846  [37] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
-  4.075  [33] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
-  5.304  [29] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
-  6.533  [17] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
-  7.762  [34] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
-  8.991  [6]  |∎∎∎∎∎∎
-  10.220 [11] |∎∎∎∎∎∎∎∎∎∎∎∎
-  11.449 [8]  |∎∎∎∎∎∎∎∎∎
-  12.678 [16] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
-  13.907 [8]  |∎∎∎∎∎∎∎∎∎
+  0.088  [1]      |
+  7.593  [640594] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  15.098 [293952] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  22.602 [51919]  |∎∎∎
+  30.107 [8965]   |∎
+  37.612 [2935]   |
+  45.116 [1161]   |
+  52.621 [364]    |
+  60.126 [82]     |
+  67.630 [22]     |
+  75.135 [5]      |
 
 Latency distribution:
-  10 % in 2.46 ms 
-  25 % in 3.51 ms 
-  50 % in 5.16 ms 
-  75 % in 7.71 ms 
-  90 % in 11.80 ms 
-  95 % in 12.56 ms 
-  99 % in 13.54 ms 
+  10 % in 1.72 ms 
+  25 % in 2.63 ms 
+  50 % in 5.24 ms 
+  75 % in 9.55 ms 
+  90 % in 13.27 ms 
+  95 % in 16.31 ms 
+  99 % in 24.31 ms 
 
 Status code distribution:
-  [OK]   200 responses
+  [OK]            1549086 responses   
+  [Canceled]      2 responses         
+  [Unavailable]   9 responses         
+
+Error distribution:
+  [1]   rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:43566->127.0.0.1:20000: use of closed network connection   
+  [1]   rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:43582->127.0.0.1:20000: use of closed network connection   
+  [2]   rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:43588->127.0.0.1:20000: use of closed network connection   
+  [1]   rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:43514->127.0.0.1:20000: use of closed network connection   
+  [2]   rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:43466->127.0.0.1:20000: use of closed network connection   
+  [2]   rpc error: code = Canceled desc = grpc: the client connection is closing                                                                      
+  [1]   rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:43468->127.0.0.1:20000: use of closed network connection   
+  [1]   rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:43550->127.0.0.1:20000: use of closed network connection   
 ```
