@@ -1,0 +1,11 @@
+dubbo:
+  protocols:
+    triple:
+      name: tri
+      port: 20000
+  provider:
+    services:
+      # you may refer to `Reference()` method defined in `protobuf/triple/helloworld.pb.go`
+      GreeterProvider:
+        # interface read from pb file
+        interface: greet.GreetService
